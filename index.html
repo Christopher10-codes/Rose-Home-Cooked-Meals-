@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose's Home Cooked Meals | Professional Catering in Eastern Cape</title>
+    <meta name="description" content="Professional catering services in Port Elizabeth, Uitenhage, Jeffreys Bay. Weddings, funerals, corporate events. Serving up to 1000 people daily.">
+    <meta name="keywords" content="catering Port Elizabeth, event catering Eastern Cape, wedding caterers Uitenhage, funeral catering Jeffreys Bay, corporate catering Grahamstown">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #8B0000; /* Dark red */
+            --secondary: #A0522D; /* Earthy brown */
+            --accent: #CD5C5C; /* Lighter red */
+            --light: #FFF8DC; /* Cream */
+            --dark: #333333;
+            --text: #444444;
+            --text-light: #666666;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Lora', serif;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            display: inline-block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 15px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--dark);
+            position: relative;
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-btns .btn {
+            min-width: 160px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-img img {
+            transition: var(--transition);
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .trust-badge {
+            background-color: var(--light);
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trust-badge i {
+            color: var(--primary);
+        }
+
+        .features {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .service-content p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .service-info {
+            background-color: var(--light);
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Menu Section */
+        .menu {
+            background-color: white;
+        }
+
+        .menu-categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .menu-category-btn {
+            padding: 10px 20px;
+            background-color: var(--light);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .menu-category-btn.active, .menu-category-btn:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .menu-items-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-category {
+            display: none;
+        }
+
+        .menu-category.active {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .menu-item {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: var(--transition);
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .menu-item-icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background-color: var(--light);
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .pricing-body {
+            padding: 30px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-note {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 20px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: white;
+        }
+
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            display: none;
+        }
+
+        .testimonial.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .testimonial-text:before, .testimonial-text:after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--primary);
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .testimonial-text:before {
+            top: -20px;
+            left: -10px;
+        }
+
+        .testimonial-text:after {
+            bottom: -40px;
+            right: -10px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        .stars {
+            color: gold;
+            margin: 10px 0;
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ddd;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .testimonial-dot.active {
+            background-color: var(--primary);
+            transform: scale(1.2);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--light);
+        }
+
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-filter {
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .gallery-filter.active, .gallery-filter:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: white;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: white;
+        }
+
+        .cta h2:after {
+            background-color: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta .btn {
+            min-width: 200px;
+        }
+
+        .cta .btn-outline {
+            border-color: white;
+            color: white;
+        }
+
+        .cta .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 5px;
+        }
+
+        .contact-text h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-form {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            position: relative;
+        }
+
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-col p, .footer-col a {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-text, .about-img {
+                flex: none;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero-btns .btn {
+                width: 100%;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .section-title {
+                margin-bottom: 30px;
+            }
+            
+            .pricing-cards, .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        /* Services Section with Icons */
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    padding: 30px;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.service-content {
+    padding: 0;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.service-content p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.service-info {
+    background-color: var(--light);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover .service-icon {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/rose-logo.jpeg" alt="logo">
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Delicious, Home-Cooked Catering for Every Occasion</h1>
+                <p>Exceptional Catering for Weddings, Funerals, Corporate Events & More — Delivered Daily</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Get a Quote</a>
+                    <a href="#menu" class="btn btn-outline">View Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Rose's Home Cooked Meals began with a simple passion for creating delicious, hearty meals that bring people together. What started as a small home kitchen has grown into a professional catering service trusted by thousands across the Eastern Cape.</p>
+                    <p>We take pride in maintaining the warmth and authenticity of home-cooked meals while delivering the professionalism and reliability expected from top-tier caterers. Our team is dedicated to making your event memorable through exceptional food and service.</p>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>CSD Registered: MAAA1396326</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Registered Business Since 2020</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-users"></i>
+                            <span>Serving Up To 1000 People Daily</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="images/About-image.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Quality Ingredients</h3>
+                    <p>We source only the freshest, highest quality ingredients for all our dishes.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Reliable Delivery</h3>
+                    <p>Timely delivery to your venue, whether it's for 50 or 1000 guests.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Professional Service</h3>
+                    <p>Experienced staff dedicated to making your event a success.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>Made With Love</h3>
+                    <p>Every dish prepared with the same care as if serving our own family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+   <!-- Services Section -->
+<section class="section services" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>We cater for all types of events, big or small, with customizable menu options to suit your needs.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Weddings</h3>
+                    <p>Make your special day unforgettable with our exquisite wedding catering. We'll work with you to create a menu that reflects your style and delights your guests.</p>
+                    <div class="service-info">
+                        <i class="fas fa-info-circle"></i> We serve up to 1000 people per day. We deliver. We offer buffet and prepacked options.
+                    </div>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-church"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Funerals</h3>
+                    <p>During difficult times, let us handle the catering with dignity and care. Our compassionate team provides nourishing meals to comfort your family and guests.</p>
+                    <div class="service-info">
+                        <i class="fas fa-info-circle"></i> We serve up to 1000 people per day. We deliver. We offer buffet and prepacked options.
+                    </div>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Corporate Functions</h3>
+                    <p>Impress clients and reward employees with our professional corporate catering. From board meetings to year-end functions, we've got you covered.</p>
+                    <div class="service-info">
+                        <i class="fas fa-info-circle"></i> We serve up to 1000 people per day. We deliver. We offer buffet and prepacked options.
+                    </div>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Graduations</h3>
+                    <p>Celebrate academic achievements with a feast to remember. Our graduation packages are designed to accommodate large groups with ease.</p>
+                    <div class="service-info">
+                        <i class="fas fa-info-circle"></i> We serve up to 1000 people per day. We deliver. We offer buffet and prepacked options.
+                    </div>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Year-End Parties</h3>
+                    <p>End the year on a high note with festive catering that brings joy to your celebration. Customizable menus to suit your company culture.</p>
+                    <div class="service-info">
+                        <i class="fas fa-info-circle"></i> We serve up to 1000 people per day. We deliver. We offer buffet and prepacked options.
+                    </div>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Daily Meal Delivery</h3>
+                    <p>Nutritious, delicious meals delivered daily to your workplace, school, or organization. Perfect for feeding large groups with consistent quality.</p>
+                    <div class="service-info">
+                        <i class="fas fa-info-circle"></i> We serve up to 1000 people per day. We deliver. We offer buffet and prepacked options.
+                    </div>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+                <p>Explore our delicious offerings. All dishes can be customized for your event.</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="menu-category-btn active" data-category="meats">🥩 Meats</button>
+                <button class="menu-category-btn" data-category="starches">🍛 Starches & Grains</button>
+                <button class="menu-category-btn" data-category="vegetables">🥦 Vegetables</button>
+                <button class="menu-category-btn" data-category="salads-creamy">🥗 Creamy Salads</button>
+                <button class="menu-category-btn" data-category="salads-fresh">🥗 Fresh Salads</button>
+            </div>
+
+            <div class="menu-items-container">
+                <!-- Meats Category -->
+                <div class="menu-category active" id="meats-category">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥩</div>
+                        <div>
+                            <h3>Beef Stew</h3>
+                            <p>Tender beef slow-cooked with aromatic spices</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍖</div>
+                        <div>
+                            <h3>Lamb Curry</h3>
+                            <p>Rich and flavorful curry with tender lamb pieces</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍗</div>
+                        <div>
+                            <h3>Chicken Drumsticks</h3>
+                            <p>Fried or grilled to perfection</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🐟</div>
+                        <div>
+                            <h3>Fried Fish</h3>
+                            <p>Crispy on the outside, flaky on the inside</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Starches & Grains Category -->
+                <div class="menu-category" id="starches-category">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍚</div>
+                        <div>
+                            <h3>Savoury Rice</h3>
+                            <p>Fragrant rice cooked with vegetables and spices</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🌽</div>
+                        <div>
+                            <h3>Creamy Samp</h3>
+                            <p>Traditional South African staple with rich flavor</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥔</div>
+                        <div>
+                            <h3>Potato Bake</h3>
+                            <p>Creamy, cheesy layered potatoes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vegetables Category -->
+                <div class="menu-category" id="vegetables-category">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🎃</div>
+                        <div>
+                            <h3>Butternut</h3>
+                            <p>Sweet and tender butternut squash</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍃</div>
+                        <div>
+                            <h3>Creamy Spinach</h3>
+                            <p>Leafy greens in a rich, creamy sauce</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥬</div>
+                        <div>
+                            <h3>Green Beans</h3>
+                            <p>Fresh green beans lightly seasoned</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥕</div>
+                        <div>
+                            <h3>Caramelized Carrots</h3>
+                            <p>Sweet glazed carrots with a hint of spice</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🌶️</div>
+                        <div>
+                            <h3>Chakalaka</h3>
+                            <p>Spicy South African vegetable relish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creamy Salads Category -->
+                <div class="menu-category" id="salads-creamy-category">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥔</div>
+                        <div>
+                            <h3>Potato Salad</h3>
+                            <p>Creamy with a hint of mustard</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍝</div>
+                        <div>
+                            <h3>Pasta Salad</h3>
+                            <p>Colorful pasta with vegetables in dressing</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍜</div>
+                        <div>
+                            <h3>Noodle Salad</h3>
+                            <p>Asian-inspired noodle salad with crunch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fresh Salads Category -->
+                <div class="menu-category" id="salads-fresh-category">
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥗</div>
+                        <div>
+                            <h3>Greek Salad</h3>
+                            <p>Crisp vegetables with feta and olives</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🥦</div>
+                        <div>
+                            <h3>Broccoli Salad</h3>
+                            <p>Fresh broccoli with raisins and nuts</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-icon">🍠</div>
+                        <div>
+                            <h3>Beetroot Salad</h3>
+                            <p>Sweet roasted beets with goat cheese</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Pricing</h2>
+                <p>Transparent pricing for all your catering needs. Contact us for customized quotes.</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Prepacked Meals</h3>
+                        <p class="pricing-price">From R100</p>
+                        <p>per person</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>Includes main, sides & salad</li>
+                            <li>Drinks included</li>
+                            <li>Perfect for quick service</li>
+                            <li>Ideal for large groups</li>
+                            <li>Delivery available</li>
+                        </ul>
+                        <a href="#contact" class="btn">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Buffet Mains Only</h3>
+                        <p class="pricing-price">From R140</p>
+                        <p>per person</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>Variety of main dishes</li>
+                            <li>Drinks included</li>
+                            <li>Serving staff available</li>
+                            <li>Beautiful presentation</li>
+                            <li>Setup & cleanup</li>
+                        </ul>
+                        <a href="#contact" class="btn">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Buffet 3-Course Meal</h3>
+                        <p class="pricing-price">From R200</p>
+                        <p>per person</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>Starter, main & dessert</li>
+                            <li>Excluding drinks</li>
+                            <li>Premium presentation</li>
+                            <li>Professional serving staff</li>
+                            <li>Full setup & cleanup</li>
+                        </ul>
+                        <a href="#contact" class="btn">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="pricing-note text-center">Prices may vary based on guest count and event type. Contact us for a tailored quote.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by thousands of satisfied customers across the Eastern Cape.</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">They catered for our graduation and it was amazing. Everyone loved the food. The service was professional and the presentation was beautiful. Highly recommended!</p>
+                    <p class="testimonial-author">- Nomsa K., Grahamstown</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Rose's team handled our wedding catering for 300 guests. The food was delicious, the service impeccable, and they worked seamlessly with our venue. Worth every rand!</p>
+                    <p class="testimonial-author">- Thando & Sipho, Port Elizabeth</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">Our corporate year-end function was a huge success thanks to Rose's catering. The variety of dishes pleased everyone, and the delivery was right on time. Will definitely use them again.</p>
+                    <p class="testimonial-author">- Mark T., Uitenhage</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">During our difficult time of loss, Rose's team provided compassionate and dignified catering for the funeral. The food was comforting and plentiful for all our guests.</p>
+                    <p class="testimonial-author">- The Mbatha Family, Jeffreys Bay</p>
+                </div>
+
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                    <div class="testimonial-dot" data-slide="3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>A taste of our delicious offerings and beautiful presentations.</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="meats">🥩 Meats</button>
+                <button class="gallery-filter" data-filter="starches">🍛 Starches</button>
+                <button class="gallery-filter" data-filter="vegetables">🥦 Vegetables</button>
+                <button class="gallery-filter" data-filter="salads">🥗 Salads</button>
+                <button class="gallery-filter" data-filter="full-meal">full meal</button>
+
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="meats">
+                    <img src="images/meat (1).jpeg" alt="meat">
+                </div>
+
+                <div class="gallery-item" data-category="meats">
+                    <img src="images/meat (2).jpeg" alt="meat">
+                </div>
+                <div class="gallery-item" data-category="meats">
+                    <img src="images/meat (3).jpeg" alt="meat">
+                </div>
+                <div class="gallery-item" data-category="meats">
+                    <img src="images/meat (4).jpeg" alt="meat">
+                </div>
+                <div class="gallery-item" data-category="starches">
+                    <img src="images/starch&grains (1).jpeg" alt="starch">
+                </div>
+                <div class="gallery-item" data-category="starches">
+                    <img src="images/starch&grains (2).jpeg" alt="starch">
+                </div>
+                 <div class="gallery-item" data-category="starches">
+                    <img src="images/starch&grains (5).jpeg" alt="starch">
+                </div>
+                 <div class="gallery-item" data-category="starches">
+                    <img src="images/starch&grains (3).jpeg" alt="starch">
+                </div>
+                <div class="gallery-item" data-category="vegetables">
+                    <img src="images/vegetable (1).jpeg" alt="vegetable">
+                </div>
+                <div class="gallery-item" data-category="vegetables">
+                    <img src="images/vegetable (2).jpeg" alt="vegetable">
+                </div>
+                 <div class="gallery-item" data-category="vegetables">
+                    <img src="images/vegetable (4).jpg" alt="vegetable">
+                </div>
+                 <div class="gallery-item" data-category="vegetables">
+                    <img src="images/vegetable (5).jpg" alt="vegetable">
+                </div>
+                <div class="gallery-item" data-category="salads">
+                    <img src="images/salad (4).avif" alt="salads">
+                </div>
+                <div class="gallery-item" data-category="salads">
+                    <img src="images/salad (5).avif" alt="salads">
+                </div>
+                <div class="gallery-item" data-category="salads">
+                    <img src="images/salad.jpeg" alt="salads">
+                </div>
+
+                 <div class="gallery-item" data-category="full-meal">
+                    <img src="images/full-meal (1).jpg" alt="full-meal">
+                </div>
+
+                 <div class="gallery-item" data-category="full-meal">
+                    <img src="images/full-meal (2).jpg" alt="full-meal">
+                </div>
+
+                 <div class="gallery-item" data-category="full-meal">
+                    <img src="images/full-meal (3).jpg" alt="full-meal">
+                </div>
+
+                 <div class="gallery-item" data-category="full-meal">
+                    <img src="images/full-meal (4).jpg" alt="full-meal">
+                </div>
+
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <h2>Ready to Plan Your Event?</h2>
+            <p>Whether you're feeding 50 or 1000 guests, we'll create a catering solution that delights your attendees and stays within your budget.</p>
+            <div class="cta-btns">
+                <a href="#contact" class="btn">Get a Free Quote</a>
+                <a href="tel:0603887602" class="btn btn-outline">Call Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch to discuss your catering needs or request a quote.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <a href="tel:0603887602">060 388 7602</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:roseshomecookmeals@gmail.com">roseshomecookmeals@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Service Areas</h3>
+                            <p>Port Elizabeth, Uitenhage, Jeffreys Bay, Hankey, Grahamstown</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/27603887602" class="btn" style="display: inline-block; padding: 8px 15px;">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/27603887602" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Rose's Home Cooked Meals</h3>
+                    <p>Professional catering services in the Eastern Cape since 2020. Delicious, home-style meals for all occasions.</p>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/profile.php?id=100063637483200" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone-alt"></i> 060 388 7602</p>
+                    <p><i class="fas fa-envelope"></i> roseshomecookmeals@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving Eastern Cape: PE, Uitenhage, JBay, Hankey, Grahamstown</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Business Info</h3>
+                    <p>Rose's Home Cooked Meals PTY LTD</p>
+                    <p>Registration No: 2020 / 470310</p>
+                    <p>CSD Registered: MAAA1396326</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rose's Home Cooked Meals. All Rights Reserved | Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by <a href="https://pulsedigitallab.co.za" style="color: var(--light-blue); text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Pulse Digital Lab</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Sticky Header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Menu Category Tabs
+        const menuCategoryBtns = document.querySelectorAll('.menu-category-btn');
+        const menuCategories = document.querySelectorAll('.menu-category');
+
+        menuCategoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and categories
+                menuCategoryBtns.forEach(btn => btn.classList.remove('active'));
+                menuCategories.forEach(cat => cat.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Show corresponding category
+                const categoryId = btn.getAttribute('data-category');
+                document.getElementById(`${categoryId}-category`).classList.add('active');
+            });
+        });
+
+        // Gallery Filter
+        const galleryFilters = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Remove active class from all filters
+                galleryFilters.forEach(f => f.classList.remove('active'));
+                
+                // Add active class to clicked filter
+                filter.classList.add('active');
+                
+                const filterValue = filter.getAttribute('data-filter');
+                
+                // Show/hide gallery items based on filter
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Testimonial Slider
+        const testimonials = document.querySelectorAll('.testimonial');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            testimonialDots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showTestimonial(index));
+        });
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            let nextTestimonial = currentTestimonial + 1;
+            if (nextTestimonial >= testimonials.length) {
+                nextTestimonial = 0;
+            }
+            showTestimonial(nextTestimonial);
+        }, 10000);
+
+        // Form Submission
+        const cateringForm = document.getElementById('cateringForm');
+        
+        cateringForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your server
+            // For this example, we'll just show an alert
+            alert('Thank you for your request! We will contact you shortly with a quote.');
+            cateringForm.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.feature, .service-card, .pricing-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Set initial state for animated elements
+        document.querySelectorAll('.feature, .service-card, .pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
